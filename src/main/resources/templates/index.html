@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mangesh Shinde | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+	rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<nav class="navbar">
+		<div class="logo">
+			MS<span>.</span>
+		</div>
+		<ul class="nav-links">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#education">Education</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+		<button id="themeBtn" aria-label="Toggle Theme">
+			<svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20"
+				fill="none" stroke="currentColor" stroke-width="2">
+				<circle cx="12" cy="12" r="5"></circle>
+				<line x1="12" y1="1" x2="12" y2="3"></line>
+				<line x1="12" y1="21" x2="12" y2="23"></line>
+				<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+				<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+				<line x1="1" y1="12" x2="3" y2="12"></line>
+				<line x1="21" y1="12" x2="23" y2="12"></line>
+				<line x1="4.22" y1="19.78" x2="5.64" y2="19.78"></line>
+				<line x1="18.36" y1="4.22" x2="19.78" y2="5.64"></line></svg>
+		</button>
+	</nav>
+
+	<header id="home" class="hero">
+		<div class="hero-content">
+			<p class="hero-subtitle">Hi, my name is</p>
+			<h1>Mangesh Shinde</h1>
+			<div class="typing-container">
+				<span id="typing"></span><span class="cursor">|</span>
+			</div>
+			<p class="hero-description">An aspiring Software Engineer and QA
+				Tester specializing in building robust, scalable backend systems
+				with Java & Spring Boot, while exploring the intersections of
+				Artificial Intelligence.</p>
+			<div class="hero-cta">
+				<a href="/docs/Mangesh_Shinde_Resume.pdf"
+					download="Mangesh_Shinde_Resume.pdf" class="btn btn-primary">Download
+					Resume</a> <a href="#" class="btn btn-secondary">GitHub Profile</a>
+			</div>
+		</div>
+	</header>
+
+	<section id="about">
+		<div class="section-header">
+			<h2>About Me</h2>
+			<div class="line"></div>
+		</div>
+		<div class="about-container">
+			<p>I am a driven technology student with a deep fascination for
+				backend engineering, software quality assurance, and intelligent
+				systems. With a strong foundation established during my technical
+				diploma and advanced engineering tracks, I enjoy writing clean,
+				efficient code and setting up test architectures that catch bugs
+				early.</p>
+			<p>Whether designing REST APIs in Spring Boot, writing complex
+				SQL joins, or studying predictive algorithmic modeling, I approach
+				development with an analytical mindset aimed at building impactful
+				software.</p>
+		</div>
+	</section>
+	<section id="skills">
+		<div class="section-header">
+			<h2>Technical Ecosystem</h2>
+			<div class="line"></div>
+		</div>
+		<div class="skills-wrapper">
+			<div class="skill-category">
+				<h3>Java Backend Engineering</h3>
+				<div class="tag-container">
+					<span class="tag">Core Java (OOPs)</span> <span class="tag">Multithreading
+						& Concurrency</span> <span class="tag">Java Collections Framework</span>
+					<span class="tag">Data Structures & Algorithms</span> <span
+						class="tag">File I/O & Serialization</span>
+				</div>
+			</div>
+
+			<div class="skill-category">
+				<h3>Spring Framework</h3>
+				<div class="tag-container">
+					<span class="tag">Spring Core (IoC & DI)</span> <span class="tag">Spring
+						AOP</span> <span class="tag">Spring MVC Architecture</span> <span
+						class="tag">Data Access & JDBC</span> <span class="tag">Servlet
+						Container Mechanics</span>
+				</div>
+			</div>
+
+			<div class="skill-category">
+				<h3>Spring Boot Ecosystem</h3>
+				<div class="tag-container">
+					<span class="tag">Spring Boot Starters</span> <span class="tag">Auto-Configuration
+						Engine</span> <span class="tag">Spring Data JPA / Hibernate</span> <span
+						class="tag">RESTful API Architecture</span> <span class="tag">Spring
+						Security Basics</span>
+					<!--  <span class="tag">Actuator & DevTools</span>-->
+				</div>
+			</div>
+
+			<div class="skill-category">
+				<h3>Full Stack Integration</h3>
+				<div class="tag-container">
+					<span class="tag">Relational Databases (MySQL, Oracle)</span> <span
+						class="tag">SQL Query Optimization & Joins</span> <span
+						class="tag">JavaScript (ES6+)</span> <span class="tag">HTML5
+						& CSS3 Flexbox/Grid</span> <span class="tag">Thymeleaf Template
+						Engine</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="projects">
+		<div class="section-header">
+			<h2>Featured Work</h2>
+			<div class="line"></div>
+		</div>
+		<div class="grid">
+			<div class="card project-card">
+				<div class="project-tags">Java • SQL • Spring</div>
+				<h3>Vehicle Breakdown Assistant</h3>
+				<p>An on-demand digital platform connecting stranded drivers
+					with local mechanics based on localization filters. Engineered the
+					backend request architecture, data layer validation, and custom
+					database schemas.</p>
+			</div>
+			<div class="card project-card">
+				<div class="project-tags">Java • Serialization</div>
+				<h3>Khatabook (CLI Ledger)</h3>
+				<p>A native command-line digital ledger application optimized
+					for performance. Utilizes fast data structuring with HashMaps
+					paired with local file serialization for persistent cross-session
+					accounting records.</p>
+			</div>
+			<div class="card project-card">
+				<div class="project-tags">Python • ML</div>
+				<h3>Student Placement Predictor</h3>
+				<p>An intelligent predictive analyzer leveraging Scikit-Learn
+					structures. Processes multi-parameter student profiles and academic
+					histories to calculate real-time baseline corporate placement
+					placement viability status.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="education">
+		<div class="section-header">
+			<h2>Academic Timeline</h2>
+			<div class="line"></div>
+		</div>
+		<div class="timeline">
+			<div class="timeline-item">
+				<div class="timeline-dot"></div>
+				<div class="card timeline-card">
+					<span class="date">Current</span>
+					<h3>B.Tech in Artificial Intelligence</h3>
+					<p class="institution">GH Raisoni College of Engineering and
+						Management</p>
+					<p class="details">Deepening specialization in predictive
+						modeling, deep structures (CNN/RNN), and advanced intelligent
+						systems engineering.</p>
+				</div>
+			</div>
+			<div class="timeline-item">
+				<div class="timeline-dot"></div>
+				<div class="card timeline-card">
+					<span class="date">Completed</span>
+					<h3>Diploma in Computer Engineering</h3>
+					<p class="institution">CSMSS College of Polytechnic,
+						Chhatrapati Sambhaji Nagar</p>
+					<p class="details">Built robust baseline foundational
+						methodologies across structural OOP principles, architecture
+						components, and advanced database modeling.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact">
+		<div class="section-header">
+			<h2>Get In Touch</h2>
+			<div class="line"></div>
+		</div>
+		<div class="contact-container">
+			<p class="contact-text">I'm currently looking for java backednd
+				developer internship roles. If you have an opportunity or just want
+				to connect, feel free to drop a message!</p>
+			<form class="contact-form" th:action="@{/contact/send}" method="POST">
+				<div class="form-row">
+					<input type="text" name="clientName" placeholder="Name" required>
+					<input type="email" name="clientEmail" placeholder="Email" required>
+				</div>
+				<textarea name="clientMessage" placeholder="Your Message" rows="6"
+					required></textarea>
+				<button type="submit" class="btn btn-primary">Send Message</button>
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<p>© 2026 Mangesh Shinde. Built with precision.</p>
+	</footer>
+	<script src="/js/script.js"></script>
+</body>
+</html>
